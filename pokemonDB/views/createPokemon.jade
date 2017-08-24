@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Create a new pokemon!
+  form(method="POST" action="/pokemon")
+    input(type="text" name="name" placeholder="Pokemon Name")
+    br
+    select
+    - for pokemon in pokemons
+      option(value="${pokemon.type} #()")

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  p Here's a list of the #{title}
+  - for trainer in trainers
+    li= trainer.name

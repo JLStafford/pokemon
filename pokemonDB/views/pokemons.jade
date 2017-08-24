@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  ul
+  p Here's a list of the #{title}
+  - for pokemon in pokemons
+    a(href="")
+    li= pokemon.name
+    li= pokemon.type
+    br
+    br
